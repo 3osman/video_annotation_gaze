@@ -79,6 +79,14 @@ try:
 
 				x = (int(box.split(" ")[0].split(".")[0]) * 768) / 1280
 				y = (int(box.split(" ")[1].split(".")[0]) * 576) / 1024
+				value = str(x) +','+str(y)
+				new_indc = new_ind/40
+				if new_indc in dd:
+
+					dd[new_indc].append(value)
+				else:
+					dd[new_indc] = []
+					dd[new_indc].append(value)
 			
 				#dr.rectangle(((x-5,y-5),(x+5,y+5)), fill=(255, 255, 255, 0), outline = "green")
 		if str(new_ind) in d_fix:		
