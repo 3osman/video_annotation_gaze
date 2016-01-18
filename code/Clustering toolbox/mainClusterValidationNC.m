@@ -3,7 +3,7 @@
 % Please read the help file "Readme.txt" before running this program
 % Kaijun WANG: wangkjun@yahoo.com, April 2007.
 
-clear;
+%clear;
 alg = 2;                     % 1 --- PAM, 2 --- K-means
 newp=1;                   % opening a new figure window ?
 subp=0;                    % plotting in which sub-window
